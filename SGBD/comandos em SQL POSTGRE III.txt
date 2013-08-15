@@ -1,0 +1,78 @@
+DROP TABLE autor
+CREATE TABLE autor(
+cod_autor Serial PRIMARY KEY,
+nome varchar NOT NULL,
+nacionalidade varchar NOT NULL
+);
+SELECT * FROM autor
+
+INSERT INTO autor (nome, nacionalidade)
+VALUES ('Stendhal', 'França');
+INSERT INTO autor (nome, nacionalidade)
+VALUES ('F.Nietzsche', 'Alemanha');
+INSERT INTO autor (nome, nacionalidade)
+VALUES ('F.Dostoiévisky', 'Russia');
+INSERT INTO autor (nome, nacionalidade)
+VALUES ('Arthur Schopenhauer', 'Alemanha');
+INSERT INTO autor (nome, nacionalidade)
+VALUES ('Giovanni Bocaccio', 'Italia');
+
+DROP TABLE livro
+CREATE TABLE livro(
+cod_livro Serial PRIMARY KEY,
+nome varchar NOT NULL,
+cod_autor integer NOT NULL,
+FOREIGN KEY (cod_autor) REFERENCES autor(cod_autor)
+);
+SELECT * FROM livro
+
+INSERT INTO livro (nome, cod_autor)
+VALUES ('Decamerão', 5);
+INSERT INTO livro (nome, cod_autor)
+VALUES ('Ecce Homo', 2);
+INSERT INTO livro (nome, cod_autor)
+VALUES ('O Vermelho e o Negro', 1);
+INSERT INTO livro (nome, cod_autor)
+VALUES ('Noites Brancas', 3);
+INSERT INTO livro (nome, cod_autor)
+VALUES ('O mundo como vontade e representação', 4);
+INSERT INTO livro (nome, cod_autor)
+VALUES ('Transvaloração de todos os valores', 2);
+INSERT INTO livro (nome, cod_autor)
+VALUES ('Assim falou Zaratustra', 2);
+INSERT INTO livro (nome, cod_autor)
+VALUES ('Crime & Castigo', 3);
+
+DROP TABLE leitor
+CREATE TABLE leitor(
+cod_leitor Serial PRIMARY KEY,
+nome varchar NOT NULL,
+telefone integer NOT NULL
+);
+SELECT * FROM leitor
+
+INSERT INTO leitor (nome, telefone)
+VALUES ('Daniela Dani', 85925528);
+INSERT INTO leitor (nome, telefone)
+VALUES ('Merolin', 86091021);
+INSERT INTO leitor (nome, telefone)
+VALUES ('Giulia', 92094423);
+
+
+DROP TABLE emprestimo
+CREATE TABLE emprestimo(
+cod_emprestimo Serial PRIMARY KEY,
+cod_leitor integer NOT NULL,
+cod_livro integer NOT NULL,
+data_emprestimo DATE NOT NULL,
+FOREIGN KEY (cod_leitor) REFERENCES leitor(cod_leitor),
+FOREIGN KEY (cod_livro) REFERENCES livro(cod_livro)
+);
+SELECT * FROM emprestimo
+
+INSERT INTO emprestimo (cod_leitor, cod_livro, data_emprestimo)
+VALUES (1, 8, '25/04/13');
+INSERT INTO emprestimo (cod_leitor, cod_livro, data_emprestimo)
+VALUES (2, 1, '12/06/13');
+INSERT INTO emprestimo (cod_leitor, cod_livro, data_emprestimo)
+VALUES (3, 5, '20/08/13');
