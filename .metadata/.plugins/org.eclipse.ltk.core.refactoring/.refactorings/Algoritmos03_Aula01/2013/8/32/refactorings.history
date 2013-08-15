@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Algoritmos03_Aula01&apos;&#x0D;&#x0A;- Original project: &apos;Algoritmos03_Aula01&apos;&#x0D;&#x0A;- Original element: &apos;exer01_lancar_dado_6mil_vx.Dado.java&apos;" description="Delete element" element1="/src&lt;exer01_lancar_dado_6mil_vx{Dado.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1375878890087" subPackages="false" version="1.0"/>
+</session>

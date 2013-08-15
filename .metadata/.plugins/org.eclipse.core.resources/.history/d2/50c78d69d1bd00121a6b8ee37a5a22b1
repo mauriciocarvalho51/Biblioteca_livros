@@ -1,0 +1,36 @@
+import java.util.Random;
+
+public class Pocao {
+
+	private int qnt;
+
+	public Pocao(){
+		this.qnt = this.randomizarPocoes();	
+	}
+	
+	public int getQntPocao() {
+		return qnt;
+	}
+	
+	public void setQntPocao(int val) {
+		this.qnt = val;
+	}
+	
+	public int randomizarRevitalizar(Personagem obj)
+	{
+		Random random = new Random();
+		int valorSorteado = random.nextInt(obj.getVida() ) + 10;
+		return valorSorteado;
+	}
+	
+	public void revitalizar(Personagem obj, int valor){
+		if (this.qnt > 0) {
+			this.qnt = qnt-1;
+			obj.setVida(randomizarRevitalizar(obj) );
+			System.out.println("REVITALIZADO: LIFE " + obj.getVida() );
+		} else {
+			System.out.println("NÃO POSSUÍ MAIS POÇÕES");
+		}
+		
+	}
+}

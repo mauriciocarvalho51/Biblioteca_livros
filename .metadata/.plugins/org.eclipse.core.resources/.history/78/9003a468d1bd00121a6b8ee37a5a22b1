@@ -1,0 +1,196 @@
+import java.text.ParseException;
+
+public class InterfaceUsuario {
+	RepositorioArmas listadearmas;
+	
+	private Personagem jogador1, jogador2;
+	
+	public InterfaceUsuario()
+	{
+		listadearmas = new RepositorioArmas();
+		listadearmas.iniciarArmas();
+		
+	}
+
+	public void executar()
+	{
+		int opcao = 0;
+		do{
+			System.out.println(Menu.getOpcoes());
+			opcao = Console.scanInt("Digite sua opção:");
+			switch(opcao)
+			{
+			case Menu.OP_PLAYERS:
+				selecionarPlayers();
+				break;
+			case Menu.OP_JOGAR:
+				//if !(jogador1) {
+				jogarPlayer01(jogador1, jogador2);
+				break;
+			case Menu.OP_SAIR:
+				System.out.println("[Aplicação finalizada!!!]");
+				break;
+			default: 
+				System.out.println("Opção inválida..");
+				
+			}
+		}while(opcao != Menu.OP_SAIR);
+	}
+	
+	public void jogarPlayer01(Personagem obj, Personagem adv)
+	{
+		int opcao = 0;
+		do{
+			System.out.println("[" + obj.getNome() + "] " + obj.getVida() + " [VS] " + adv.getVida() + " [" + adv.getNome() + "]");
+			System.out.println(Menu.getOpcoesJogo());
+			opcao = Console.scanInt("Digite sua opção:");
+			switch(opcao)
+			{
+			case Menu.OP_ATACAR:
+				//cadastrarCd();
+				break;
+			case Menu.OP_TOMARPOCAO:
+				//cadastrarDvd();
+				break;
+			case Menu.OP_VOLTAR:
+				executar();
+				break;
+			default:
+				System.out.println("Opção inválida..");
+			}
+		}while(opcao != Menu.OP_VOLTAR);
+	}
+	
+	private void selecionarPlayers()
+	{
+		int opcao = 0;
+		do{
+			/*System.out.println("-----------------------------\n");
+		criarPersonagem();
+		criarAdversario();
+		imprimirDuelo();
+		//mostrarArmas();
+		//receberArma();*/
+			
+				System.out.println(Menu.getOpcoesPlayers());
+				opcao = Console.scanInt("Digite sua opção:");
+				switch(opcao)
+				{
+				case Menu.OP_VS_CPU:
+					jogarVsCpu();
+					break;
+				case Menu.OP_VS_VS:
+					jogarVs();
+					break;
+				case Menu.OP_VOLTAR:
+					executar();
+					break;
+				default:
+					System.out.println("Opção inválida..");
+				}
+			}while(opcao != Menu.OP_VOLTAR);
+		}
+	
+	private void escolherPlayers()
+	{
+		System.out.println("-----------------------------\n");
+		criarPersonagem();
+		criarAdversario();
+		imprimirDuelo();
+	}
+	
+	private void criarPersonagem()
+	{ 
+		System.out.println("------- PALYER 1 -------");
+		String nome = Console.scanString("Digite Nome:");
+		jogador1 = new Personagem(nome);
+		receberArma(jogador1);
+	}
+	
+	private void criarAdversario()
+	{ 
+		System.out.println("------- PALYER 2 -------");
+		String nome = Console.scanString("Digite Nome:");
+		jogador2 = new Personagem(nome);
+		receberArma(jogador2);
+	}
+	
+	private void mostrarArmas()
+	{
+		System.out.println("-----------------------------\n");
+		System.out.println(String.format("%-10s", "ÍTEM") + "\t"
+	            + String.format("%-10s", "|ARMA") + "\t"
+	            + String.format("%-10s", "|ACERTO") + "\t"
+	            + String.format("%-10s", "|DANO"));	
+		for(Armas correr: listadearmas.getListadearmas() )
+		{
+			if (correr instanceof Armas)
+			{
+			Armas armas = (Armas) correr;
+					System.out.println(String.format("%-10s", armas.getCodigo() ) + "\t"
+		            + String.format("%-10s", "|"+ armas.getNome() ) + "\t"
+		            + String.format("%-10s", "|"+ armas.getChancedeacerto() ) + "\t"
+		            + String.format("%-10s", "|"+ armas.getDanomaximo() ));
+			}
+		}
+	}
+	
+	private void receberArma(Personagem player)
+	{
+		mostrarArmas();
+		int codigo=0;
+		do {
+		codigo = Console.scanInt("digite codigo arma:");
+		if (listadearmas.armaExiste(codigo))
+		{
+		    player.setArma(listadearmas.buscarArma(codigo));
+		} else {
+			System.out.println("Arma não disponível");
+		}
+		} while (!listadearmas.armaExiste(codigo));
+	}
+	
+
+	public void imprimirDuelo()
+	{
+		System.out.println("-----------------------------\n");
+		System.out.println(" PLAYER 1 -------\n");
+		System.out.println(jogador1.getNome());
+		System.out.println("Arma: " + jogador1.getArma());
+		System.out.println("Life: " + jogador1.getVida() + "/50" );
+		System.out.println("Armadura: " + jogador1.getArmadura() + "/10" );
+		System.out.println("Poções: " + jogador1.getNumPocoes() + "\n");
+		System.out.println("----------VESUS--------\n");
+		System.out.println(" PLAYER 2 -------\n");
+		System.out.println(jogador2.getNome());
+		System.out.println("Arma: " + jogador2.getArma());
+		System.out.println("Life: " + jogador2.getVida() + "/50" );
+		System.out.println("Armadura: " + jogador2.getArmadura() + "/10" );
+		System.out.println("Poções: " + jogador2.getNumPocoes() + "\n");
+		System.out.println("-----------------------------\n");
+	}
+	
+	private void jogarVsCpu()
+	{
+		escolherPlayers();
+	}
+	
+	private void jogarVs()
+	{
+		escolherPlayers();
+	}
+	
+	private void atacar(Personagem obj, Personagem adv)
+	{
+		if () {
+			System.out.println("ATAQUE REALIZADO!");
+		} else {
+			System.out.println("ATAQUE FAIL!");
+		}
+	}
+	
+	private void tomarPocao()
+	{
+		
+	}
+}

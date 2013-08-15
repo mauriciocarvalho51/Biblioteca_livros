@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Algoritmos03_Aula01/src/exer02_lancar_cartao_megasena/ApostaPrincipal.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="exer02_lancar_cartao_megasena.ApostaPrincipal"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Algoritmos03_Aula01"/>
+</launchConfiguration>

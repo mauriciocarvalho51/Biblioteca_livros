@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;br.senac&apos; to &apos;br.senac.modelo&apos;&#x0D;&#x0A;- Original project: &apos;Aula_07_revisao_pratica&apos;&#x0D;&#x0A;- Original element: &apos;Aula_07_revisao_pratica/src/br.senac&apos;&#x0D;&#x0A;- Renamed element: &apos;Aula_07_revisao_pratica/src/br.senac.modelo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings&#x0D;&#x0A;- Rename subpackages of the package" description="Rename package &apos;br.senac&apos;" flags="589830" hierarchical="true" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;br.senac" name="br.senac.modelo" qualified="false" references="true" stamp="1366207167754" textual="false" version="1.0"/>
+</session>

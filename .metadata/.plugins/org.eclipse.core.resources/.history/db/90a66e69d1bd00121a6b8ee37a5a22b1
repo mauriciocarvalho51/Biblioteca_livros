@@ -1,0 +1,70 @@
+import java.util.Random;
+
+public class Personagem {
+
+	private String nome;
+	private Armas arma;
+	private int vida;
+	private int armadura;
+	private int numPocoes;
+	//private Pocao pocao;
+	
+	public Personagem(String nom)
+	{
+		this.nome = nom;
+		this.vida = this.randomizarVida();
+		this.armadura = this.randomizarArmadura();
+		this.numPocoes = this.randomizarPocoes();
+	}
+	
+	public String getNome()
+	{
+		return nome;
+	}
+
+	public void setArma(Armas umaArma) {
+		this.arma = umaArma;
+	}
+	
+	public Armas getArma() {
+		return arma;
+	}
+	
+	public void setVida(int revitalizacao) {
+		this.vida = revitalizacao;
+	}
+	
+	public int getVida() {
+		return vida;
+	}
+	
+	public int randomizarVida()
+	{
+		Random random = new Random();
+		int valorSorteado = random.nextInt(41) + 10;
+		return valorSorteado;
+	}
+	
+	public int getArmadura() {
+		return armadura;
+	}
+	
+	public int randomizarArmadura()
+	{
+		Random random = new Random();
+		int valorSorteado = random.nextInt(10) + 1;
+		return valorSorteado;
+	}
+	
+	public int getNumPocoes() {
+		return numPocoes;
+	}
+	
+	public int randomizarPocoes()
+	{
+		Random random = new Random();
+		int valorSorteado = random.nextInt(5) + 1;
+		return valorSorteado;
+	}
+	
+}

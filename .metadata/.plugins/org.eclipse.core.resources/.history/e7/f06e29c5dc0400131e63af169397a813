@@ -1,0 +1,30 @@
+package exer01_comparar_numeros_matriz;
+
+import java.util.Random;
+
+public class Matriz {
+
+	/*
+	1) Gerar uma matriz M(4, 6), aleatoriamente, com valores entre 3 e 20. 
+	Em seguida ler 5 valores, um de cada vez, e, para cada valor lido, 
+	verificar se este valor está ou não na matriz M, 
+	escrevendo-o com uma mensagem adequada.
+	*/
+	
+	public static void main(String[] args) {
+		
+		final int NUM_LIN = 3;
+		final int NUM_COL = 4;
+		
+		int matriz[][] = new int[NUM_LIN][NUM_COL];
+		
+		Random random = new Random();
+		
+		for (i=0; i<NUM_LIN; i++) {
+			for (j=0; j<NUM_COL; j++) {
+				
+			}
+		}
+	}
+
+}

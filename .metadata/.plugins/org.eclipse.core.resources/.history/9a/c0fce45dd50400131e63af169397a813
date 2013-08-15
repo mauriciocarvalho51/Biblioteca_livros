@@ -1,0 +1,39 @@
+package exer02_lancar_cartao_megasena;
+
+import java.util.Random;
+
+public class ApostaPrincipal {
+
+	public static int randomizarNumero()
+	{
+		Random random = new Random();
+		int numSorteado = random.nextInt(60) + 1;
+		return numSorteado;
+	}
+	
+		public static void main(String[] args) {
+		
+			int cartao [] = new int[6];
+			int x, y, val;
+			
+			for (x=0; x<6; x++) {
+				val = randomizarNumero();
+				cartao[0] = val;
+				
+				for (y=0; y<x; y++) {
+					if ( cartao[x] != val ) {
+						cartao[x] = val;
+					}
+				}
+				
+			}
+			
+			System.out.println("NUMEROS APOSTADOS: ");
+			for (x = 0; x <6; x++) {
+				System.out.printf("%1d\t", cartao[x]);
+			}
+
+
+			
+		}
+}

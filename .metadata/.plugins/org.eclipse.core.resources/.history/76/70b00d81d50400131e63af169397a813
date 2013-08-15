@@ -1,0 +1,49 @@
+package exer02_lancar_cartao_megasena;
+
+import java.util.Random;
+
+public class ApostaPrincipal {
+
+	/*
+	1)_ Gerar um nº 1 à 60
+	2)_ Armazenar o valor na 1ª posição do vetor.
+	3)_ Gerar um novo valor.
+	4)_ comparar com os valores no vetor.
+	5)_ Se o novo valor estiver no vetor:
+		5.1)_ Gerar um novo valor e voltar a comparar com os valores já armazenados no vetor.
+		5.2)_ C.C. armazenar o valor no vetor.
+	 */
+	
+	public static int randomizarNumero()
+	{
+		Random random = new Random();
+		int numSorteado = random.nextInt(60) + 1;
+		return numSorteado;
+	}
+	
+		public static void main(String[] args) {
+		
+			int cartao [] = new int[6];
+			int x, y, val;
+			
+			for (x=0; x<6; x++) {
+				val = randomizarNumero();
+				cartao[0] = val;
+				
+				for (y=1; y< cartao.length ; y++) {
+					if ( cartao[x] != val ) {
+						cartao[y] = val;
+					}
+				}
+				
+			}
+			
+			System.out.println("NUMEROS APOSTADOS: ");
+			for (x = 0; x <6; x++) {
+				System.out.printf("%1d\t", cartao[x]);
+			}
+
+
+			
+		}
+}
