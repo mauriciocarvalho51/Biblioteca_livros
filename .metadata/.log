@@ -4122,3 +4122,39 @@ org.eclipse.core.internal.resources.ResourceException: The project description f
 
 !ENTRY org.eclipse.ui 4 4 2013-08-15 09:09:52.231
 !MESSAGE Unable to find Action Set: org.eclipse.rse.core.search.searchActionSet
+!SESSION 2013-08-29 08:25:04.790 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2013-08-29 08:44:54.032
+!MESSAGE Unable to find Action Set: org.eclipse.mylyn.context.ui.actionSet
+
+!ENTRY org.eclipse.ui 4 4 2013-08-29 08:44:54.042
+!MESSAGE Unable to find Action Set: org.eclipse.mylyn.doc.actionSet
+
+!ENTRY org.eclipse.ui 4 4 2013-08-29 08:44:54.052
+!MESSAGE Unable to find Action Set: org.eclipse.mylyn.tasks.ui.navigation
+
+!ENTRY org.eclipse.ui 4 4 2013-08-29 08:44:54.052
+!MESSAGE Unable to find Action Set: org.eclipse.rse.core.search.searchActionSet
+!SESSION 2013-08-29 08:47:52.879 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Users\631220111\Documents\GitHub\Biblioteca_livros
+
+!ENTRY org.eclipse.ui 4 4 2013-08-29 08:48:12.692
+!MESSAGE Unable to find Action Set: org.eclipse.mylyn.context.ui.actionSet
+
+!ENTRY org.eclipse.ui 4 4 2013-08-29 08:48:12.693
+!MESSAGE Unable to find Action Set: org.eclipse.mylyn.doc.actionSet
+
+!ENTRY org.eclipse.ui 4 4 2013-08-29 08:48:12.693
+!MESSAGE Unable to find Action Set: org.eclipse.mylyn.tasks.ui.navigation
+
+!ENTRY org.eclipse.ui 4 4 2013-08-29 08:48:12.693
+!MESSAGE Unable to find Action Set: org.eclipse.rse.core.search.searchActionSet

@@ -61,7 +61,7 @@
           <tags>persp.actionSet:org.eclipse.mylyn.doc.actionSet</tags>
           <tags>persp.actionSet:org.eclipse.mylyn.tasks.ui.navigation</tags>
           <tags>persp.actionSet:org.eclipse.rse.core.search.searchActionSet</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_UkdwQM9rEeKRv-CtW76Nig" selectedElement="_6gVmPnxLEeKi0tSVTZpmbg">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_UkdwQM9rEeKRv-CtW76Nig" selectedElement="_6gVmMHxLEeKi0tSVTZpmbg">
             <children xsi:type="basic:PartSashContainer" xmi:id="_6gVmMHxLEeKi0tSVTZpmbg" containerData="7433" selectedElement="_6gVmMXxLEeKi0tSVTZpmbg" horizontal="true">
               <children xsi:type="basic:PartStack" xmi:id="_6gVmMXxLEeKi0tSVTZpmbg" elementId="left" containerData="2486" selectedElement="_6gVmNXxLEeKi0tSVTZpmbg">
                 <tags>newtablook</tags>

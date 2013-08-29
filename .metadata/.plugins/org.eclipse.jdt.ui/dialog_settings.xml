@@ -9,24 +9,24 @@
 	<section name="DialogBounds_SuperInterfaceSelectionDialog">
 		<item value="309" key="DIALOG_WIDTH"/>
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
-		<item value="85" key="DIALOG_X_ORIGIN"/>
 		<item value="451" key="DIALOG_HEIGHT"/>
+		<item value="85" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
-	</section>
-	<section name="ClasspathContainerSelectionPage">
-		<item value="1" key="index"/>
 	</section>
 	<section name="SourceActionDialog.methods">
 		<item value="false" key="SkipNull"/>
 		<item value="10" key="LimitValue"/>
-		<item value="false" key="Comments"/>
-		<item value="1" key="VisibilityModifier"/>
-		<item value="0" key="ToStringTemplateSelected"/>
 		<item value="0" key="StringStyle"/>
+		<item value="0" key="ToStringTemplateSelected"/>
+		<item value="1" key="VisibilityModifier"/>
+		<item value="false" key="Comments"/>
 		<item value="false" key="LimitElements"/>
 		<item value="false" key="SynchronizedModifier"/>
-		<item value="false" key="FinalModifier"/>
 		<item value="true" key="IgnoreDefault"/>
+		<item value="false" key="FinalModifier"/>
+	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item value="1" key="index"/>
 	</section>
 	<section name="javadoc">
 		<item value="false" key="nodeprecatedlist"/>
@@ -48,135 +48,135 @@
 		<item value="F:\PROJETOS\CRUD_versao_basica\javadoc.xml" key="antpath"/>
 		<item value="true" key="fromStandard"/>
 		<section name="projects">
-			<section name="CRUD_versao_basica">
-				<item value="F:\PROJETOS\CRUD_versao_basica\doc" key="destdir"/>
+			<section name="Aula_13_listasExer01">
+				<item value="F:\PROJETOS\Aula_13_listasExer01\doc" key="destdir"/>
+				<item value="F:\PROJETOS\Aula_13_listasExer01\javadoc.xml" key="antpath"/>
 				<item value="" key="href"/>
-				<item value="F:\PROJETOS\CRUD_versao_basica\javadoc.xml" key="antpath"/>
 			</section>
 			<section name="CRUD_versao1">
 				<item value="F:\PROJETOS\CRUD_versao1\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\CRUD_versao1\javadoc.xml" key="antpath"/>
-			</section>
-			<section name="Aula_13_listasExer01">
-				<item value="F:\PROJETOS\Aula_13_listasExer01\doc" key="destdir"/>
 				<item value="" key="href"/>
-				<item value="F:\PROJETOS\Aula_13_listasExer01\javadoc.xml" key="antpath"/>
+			</section>
+			<section name="CRUD_versao_basica">
+				<item value="F:\PROJETOS\CRUD_versao_basica\doc" key="destdir"/>
+				<item value="F:\PROJETOS\CRUD_versao_basica\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula_01_exercicio_lampadas">
 				<item value="F:\PROJETOS\Aula_01_exercicio_lampadas\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\Aula_01_exercicio_lampadas\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula_05_funcionario_SemHeranca">
 				<item value="F:\PROJETOS\Aula_05_funcionario_SemHeranca\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\Aula_05_funcionario_SemHeranca\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula15_Collections">
 				<item value="E:\PROJETOS\Aula15_Collections\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="E:\PROJETOS\Aula15_Collections\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula_01_exercicio_carro">
 				<item value="F:\PROJETOS\Aula_01_exercicio_carro\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\Aula_01_exercicio_carro\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula01_exercicio_bar">
 				<item value="F:\PROJETOS\Aula01_exercicio_bar\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\Aula01_exercicio_bar\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula_12_Algoritmo02">
 				<item value="F:\PROJETOS\Aula_12_Algoritmo02\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\Aula_12_Algoritmo02\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula_12_Algoritmo01">
 				<item value="F:\PROJETOS\Aula_12_Algoritmo01\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\Aula_12_Algoritmo01\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula_09_correcaoProva">
 				<item value="F:\PROJETOS\Aula_09_correcaoProva\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\Aula_09_correcaoProva\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula_07_exercicio_pratico">
 				<item value="F:\PROJETOS\Aula_07_exercicio_pratico\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\Aula_07_exercicio_pratico\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula_05_funcionario_ComHeranca">
 				<item value="F:\PROJETOS\Aula_05_funcionario_ComHeranca\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\Aula_05_funcionario_ComHeranca\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula05_exercicio_barFinal">
 				<item value="E:\PROJETOS" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="E:\PROJETOS\Aula05_exercicio_barFinal\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula04_exercicio_DoME">
 				<item value="F:\PROJETOS\Aula04_exercicio_DoME\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\Aula04_exercicio_DoME\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula_04_exercicio_biblioteca">
 				<item value="F:\PROJETOS\Aula_04_exercicio_biblioteca\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\Aula_04_exercicio_biblioteca\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula08_ArenaMonster_part1">
 				<item value="F:\PROJETOS\Aula08_ArenaMonster_part1\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\Aula08_ArenaMonster_part1\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="ArenaMonster_part2_versao1">
 				<item value="F:\PROJETOS\ArenaMonster_part2_versao1\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\ArenaMonster_part2_versao1\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula02_exercicio_bar">
 				<item value="F:\PROJETOS\Aula02_exercicio_bar\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\Aula02_exercicio_bar\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="ArenaMonster_part2_versao2">
 				<item value="F:\PROJETOS\ArenaMonster_part2_versao2" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="E:\PROJETOS\ArenaMonster_part2_versao2\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula_12_Algoritmo01_prof">
 				<item value="F:\PROJETOS\Aula_12_Algoritmo01_prof\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\Aula_12_Algoritmo01_prof\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="ArenaMonster_part1_versao2">
 				<item value="F:\PROJETOS\ArenaMonster_part1_versao2\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\ArenaMonster_part1_versao2\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="ProjetoExerc1">
 				<item value="F:\PROJETOS\ProjetoExerc1\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\ProjetoExerc1\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="ProjetoExerc2">
 				<item value="F:\PROJETOS\ProjetoExerc2\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\ProjetoExerc2\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="Aula_06_Animal">
 				<item value="F:\PROJETOS\Aula_06_Animal\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\Aula_06_Animal\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="CRUDProduto">
 				<item value="F:\PROJETOS\CRUDProduto\doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="F:\PROJETOS\CRUDProduto\javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 		</section>
 	</section>
@@ -192,8 +192,8 @@
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
 		<item value="529" key="DIALOG_WIDTH"/>
 		<item value="69" key="DIALOG_Y_ORIGIN"/>
-		<item value="388" key="DIALOG_X_ORIGIN"/>
 		<item value="695" key="DIALOG_HEIGHT"/>
+		<item value="388" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="RenameInformationPopup">
@@ -205,21 +205,21 @@
 	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
 		<item value="467" key="DIALOG_WIDTH"/>
 		<item value="4" key="DIALOG_Y_ORIGIN"/>
-		<item value="283" key="DIALOG_X_ORIGIN"/>
 		<item value="605" key="DIALOG_HEIGHT"/>
+		<item value="283" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="SourceActionDialog.constructors">
-		<item value="1" key="VisibilityModifier"/>
 		<item value="false" key="Comments"/>
+		<item value="1" key="VisibilityModifier"/>
 		<item value="false" key="SynchronizedModifier"/>
 		<item value="false" key="FinalModifier"/>
 	</section>
 	<section name="DialogBounds_GenerateToStringDialog">
 		<item value="516" key="DIALOG_WIDTH"/>
 		<item value="98" key="DIALOG_Y_ORIGIN"/>
-		<item value="690" key="DIALOG_HEIGHT"/>
 		<item value="482" key="DIALOG_X_ORIGIN"/>
+		<item value="690" key="DIALOG_HEIGHT"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="GenerateConstructorUsingFieldsSelectionDialog">
@@ -257,29 +257,29 @@
 		<section name="DialogBoundsSettings">
 			<item value="286" key="DIALOG_WIDTH"/>
 			<item value="0" key="DIALOG_Y_ORIGIN"/>
-			<item value="-37" key="DIALOG_X_ORIGIN"/>
 			<item value="522" key="DIALOG_HEIGHT"/>
+			<item value="-37" key="DIALOG_X_ORIGIN"/>
 			<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		</section>
 	</section>
 	<section name="completion_proposal_size">
 	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
-		<item value="*" key="patterns"/>
-		<item value="false" key="updateQualifiedNames"/>
 		<item value="true" key="renameSubpackages"/>
+		<item value="false" key="updateQualifiedNames"/>
+		<item value="*" key="patterns"/>
 		<item value="false" key="updateTextualMatches"/>
 	</section>
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>
-		<item value="true" key="create_main"/>
 		<item value="true" key="create_unimplemented"/>
+		<item value="true" key="create_main"/>
 	</section>
 	<section name="JavadocWizardDialog">
 		<item value="616" key="DIALOG_WIDTH"/>
 		<item value="66" key="DIALOG_Y_ORIGIN"/>
-		<item value="615" key="DIALOG_HEIGHT"/>
 		<item value="248" key="DIALOG_X_ORIGIN"/>
+		<item value="615" key="DIALOG_HEIGHT"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 </section>
