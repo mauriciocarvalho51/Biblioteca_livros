@@ -4158,3 +4158,8 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Users\631220111\
 
 !ENTRY org.eclipse.ui 4 4 2013-08-29 08:48:12.693
 !MESSAGE Unable to find Action Set: org.eclipse.rse.core.search.searchActionSet
+
+!ENTRY org.eclipse.core.resources 2 2 2013-08-29 10:33:42.738
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2013-08-29 10:33:42.738
+!MESSAGE The project description file (.project) for 'CRUD_versao_basica' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.

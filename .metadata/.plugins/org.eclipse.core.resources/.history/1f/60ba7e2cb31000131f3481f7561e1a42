@@ -27,12 +27,12 @@ public class BibliotecaDAO {
 			db = DriverManager.getConnection(url, props);
 			
 			st = db.prepareStatement(cmd);
-			st.setString(1, pais);
+			st.setString(1, nome);
 			rs = st.executeQuery();
 			
 			while (rs.next()) {
 				int codautor = rs.getInt(1);
-				String nome = rs.getString(2);
+				String nome = rs.getString(4);
 				String nacionalidade = rs.getString(3);
 				escritor = new Escritor(codautor, nome, nacionalidade);
 			}

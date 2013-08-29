@@ -32,8 +32,8 @@ public class BibliotecaDAO {
 			
 			while (rs.next()) {
 				int codautor = rs.getInt(1);
-				String nome = rs.getString(2);
-				String nacionalidade = rs.getString(3);
+				String nome = rs.getString(3);
+				String nacionalidade = rs.getString(4);
 				escritor = new Escritor(codautor, nome, nacionalidade);
 			}
 			
