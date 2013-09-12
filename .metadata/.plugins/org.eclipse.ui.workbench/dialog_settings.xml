@@ -16,12 +16,11 @@
 		<item value="123" key="DIALOG_Y_ORIGIN"/>
 		<item value="128" key="DIALOG_X_ORIGIN"/>
 	</section>
-	<section name="ZipFileImportWizard">
-		<item value="false" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
-		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
-			<item value="C:\Documents and Settings\LOL\Desktop\ProjetoCrudProdutos.zip"/>
-			<item value="F:\PROGRAMAÇÃO [Prof. Ries]\Algoritmos\Aula 12 - Estrutura de Dados - Lista Encadeada\ProjetoAlgoritmoPessoaIdosa.zip"/>
-			<item value="F:\PROGRAMAÇÃO [Prof. Ries]\Algoritmos\Aula 09 - Revisão Prova 01\ProjetoRevisao.zip"/>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.junit"/>
 		</list>
 	</section>
 	<section name="ZipFileExportWizard">
@@ -35,11 +34,12 @@
 			<item value="F:\PROGRAMAÇÃO [Prof. Ries]\Laboratorio\TRABALHO 01\segunda parte\ArenaMonster_part2_versao1.zip"/>
 		</list>
 	</section>
-	<section name="NewWizardAction">
-		<item value="org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
-		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.jdt.ui.java"/>
-			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.junit"/>
+	<section name="ZipFileImportWizard">
+		<item value="false" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Documents and Settings\LOL\Desktop\ProjetoCrudProdutos.zip"/>
+			<item value="F:\PROGRAMAÇÃO [Prof. Ries]\Algoritmos\Aula 12 - Estrutura de Dados - Lista Encadeada\ProjetoAlgoritmoPessoaIdosa.zip"/>
+			<item value="F:\PROGRAMAÇÃO [Prof. Ries]\Algoritmos\Aula 09 - Revisão Prova 01\ProjetoRevisao.zip"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">
