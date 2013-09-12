@@ -58,4 +58,9 @@ public class BibliotecaDAO {
 			}
 		return escritor;
 		}
+
+	public void insertEscritor(Escritor c) {
+		// TODO Auto-generated method stub
+		
+	}
 }

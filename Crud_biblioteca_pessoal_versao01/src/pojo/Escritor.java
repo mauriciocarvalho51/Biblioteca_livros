@@ -3,21 +3,27 @@ package pojo;
 public class Escritor {
 
 	private int codautor;
-	private String Nome;
+	private String nome;
 	private String nacionalidade;
 	
 	public Escritor(int cod, String name, String pais) {
 		this.codautor = cod;
-		this.Nome =name;
+		this.nome =name;
+		this.nacionalidade = pais;
+	}
+	
+	public Escritor(String name, String pais) {
+		//this.codautor = cod;
+		this.nome =name;
 		this.nacionalidade = pais;
 	}
 
 	public String getNome() {
-		return Nome;
+		return nome;
 	}
 
 	public void setNome(String nome) {
-		Nome = nome;
+		this.nome = nome;
 	}
 
 	public String getNacionalidade() {
@@ -34,7 +40,7 @@ public class Escritor {
 
 	@Override
 	public String toString() {
-		return "Escritor [codautor=" + codautor + ", Nome=" + Nome
+		return "Escritor [codautor=" + codautor + ", nome=" + nome
 				+ ", nacionalidade=" + nacionalidade + "]";
 	}
 	
