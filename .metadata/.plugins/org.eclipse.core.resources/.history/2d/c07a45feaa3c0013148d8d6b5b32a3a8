@@ -168,10 +168,10 @@ public class BibliotecaDAO {
 			rs = st.executeQuery();
 
 			while (rs.next()) {
-				int codlivro = rs.getInt(1);
+				int codautor = rs.getInt(1);
 				String nome = rs.getString(2);
-				int codescritor = rs.getInt(3);
-				livros.add(new Livro(codlivro, nome, codescritor));
+				String nacionalidade = rs.getString(3);
+				autores.add(new Escritor(codautor, nome, nacionalidade));
 			}
 
 		} catch (Exception e) {

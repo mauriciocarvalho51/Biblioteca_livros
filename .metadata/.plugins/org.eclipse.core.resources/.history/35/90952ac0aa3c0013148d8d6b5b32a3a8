@@ -11,10 +11,6 @@ public class Livro {
 		this.nome = name;
 		this.codescritor = codautor;
 	}
-	
-	public Livro() {
-		
-	}
 
 	public String getNome() {
 		return nome;

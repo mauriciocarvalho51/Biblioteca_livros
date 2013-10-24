@@ -12,14 +12,10 @@ public class BibliotecaDAOTest {
 		
 		BibliotecaDAO dao = new BibliotecaDAO();
 		
-		/*
 		Escritor escritor = new Escritor("Eça", "Portugal");
 		dao.insertEscritor(escritor);
 		
 		System.out.println( dao.findEscritorByNacionalidade("Portugal") );
-		*/
-		
-		System.out.println(dao.findLivros());
 	}
 
 }

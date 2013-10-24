@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.Properties;
 
 import pojo.Escritor;
-import pojo.Livro;
 
 public class BibliotecaDAO {
 
@@ -102,10 +101,10 @@ public class BibliotecaDAO {
 		
 	}
 	
-	public List<Escritor> findEscritorByNacionalidade(String pais) {
+	public List<Escritor> findEscritorByNacionalidade(Escritor pais) {
 		String cmd = "select * from autor where nacionalidade= ?";
 		List<Escritor> autores = new ArrayList<Escritor>();
-		
+
 		Connection db = null;
 		PreparedStatement st = null;
 		ResultSet rs = null;
@@ -118,7 +117,9 @@ public class BibliotecaDAO {
 			db = DriverManager.getConnection(url, props);
 
 			st = db.prepareStatement(cmd);
-			st.setString(1, pais);
+			st.setString(3, pais.getNacionalidade());
+			//st.setString( nacionalidade.pais.g.g  );
+			//st.setInt(1, pais.g c.getContaId());
 			rs = st.executeQuery();
 
 			while (rs.next()) {
@@ -148,50 +149,5 @@ public class BibliotecaDAO {
 		return autores;
 	}
 
-	public List<Livro> findLivros() {
-		String cmd = "select * from livro";
-		List<Livro> livros = new ArrayList<Livro>();
-		
-		Connection db = null;
-		PreparedStatement st = null;
-		ResultSet rs = null;
 
-		try {
-			Properties props = new Properties();
-			props.load(new FileInputStream("CRUD.properties"));
-			String url = props.getProperty("url");
-
-			db = DriverManager.getConnection(url, props);
-
-			st = db.prepareStatement(cmd);
-			//st.setString(1, pais);
-			rs = st.executeQuery();
-
-			while (rs.next()) {
-				int codlivro = rs.getInt(1);
-				String nome = rs.getString(2);
-				int codescritor = rs.getInt(3);
-				livros.add(new Livro(codlivro, nome, codescritor));
-			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				if (rs != null) {
-					rs.close();
-				}
-				if (st != null) {
-					st.close();
-				}
-				if (db != null) {
-					db.close();
-				}
-			} catch (Exception e2) {
-				e2.printStackTrace();
-			}
-		}
-		return livros;
-	}
-	
 }
