@@ -34,14 +34,27 @@ public class MyTableModel extends AbstractTableModel {
 	@Override
 	public Object getValueAt(int lin, int col) {
 		Livro l = listadelivros.get(lin);
-		//Movimentacao m = mvs.get(lin);
 		switch (col) {
 		case 0:
 			return l.getCodlivro();
 		case 1:
 			return l.getNome();
 		case 2:
-			return l.getCodescritor();
+			return l.getEscritor();
+		default:
+			return "*ERRO*";
+		}		
+	}
+	
+	@Override
+	public String getColumnName(int col) {
+		switch (col) {
+		case 0:
+			return "cod";
+		case 1:
+			return "nom";
+		case 2:
+			return "desc";
 		default:
 			return "*ERRO*";
 		}

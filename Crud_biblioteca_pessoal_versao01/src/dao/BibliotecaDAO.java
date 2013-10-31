@@ -149,7 +149,8 @@ public class BibliotecaDAO {
 	}
 
 	public List<Livro> findLivros() {
-		String cmd = "select * from livro";
+		//String cmd = "select * from livro";
+		String cmd = "select * from livro, autor where livro.cod_autor = autor.cod_autor";
 		List<Livro> livros = new ArrayList<Livro>();
 		
 		Connection db = null;
@@ -171,7 +172,8 @@ public class BibliotecaDAO {
 				int codlivro = rs.getInt(1);
 				String nome = rs.getString(2);
 				int codescritor = rs.getInt(3);
-				livros.add(new Livro(codlivro, nome, codescritor));
+				String escritor = rs.getString(5);
+				livros.add(new Livro(codlivro, nome, codescritor, escritor));
 			}
 
 		} catch (Exception e) {

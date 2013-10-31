@@ -1,0 +1,45 @@
+package biblioteca_pessoal;
+
+import java.awt.EventQueue;
+
+import javax.swing.JInternalFrame;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
+
+public class WindowBuilderJInetrnalFrameTest extends JInternalFrame {
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					WindowBuilderJInetrnalFrameTest frame = new WindowBuilderJInetrnalFrameTest();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public WindowBuilderJInetrnalFrameTest() {
+		setBounds(100, 100, 612, 300);
+		GroupLayout groupLayout = new GroupLayout(getContentPane());
+		groupLayout.setHorizontalGroup(
+			groupLayout.createParallelGroup(Alignment.LEADING)
+				.addGap(0, 596, Short.MAX_VALUE)
+		);
+		groupLayout.setVerticalGroup(
+			groupLayout.createParallelGroup(Alignment.LEADING)
+				.addGap(0, 271, Short.MAX_VALUE)
+		);
+		getContentPane().setLayout(groupLayout);
+
+	}
+
+}

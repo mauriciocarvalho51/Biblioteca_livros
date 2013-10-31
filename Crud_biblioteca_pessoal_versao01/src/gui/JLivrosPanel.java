@@ -3,25 +3,24 @@ package gui;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Dimension;
-import java.awt.event.KeyEvent;
 
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
 public class JLivrosPanel extends JPanel {
-	
+
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	
 	private JTable table;
 	private JFrame frame;
 
 	private CardLayout card;
+
 	public JFrame getFrame() {
 		return frame;
 	}
@@ -43,14 +42,17 @@ public class JLivrosPanel extends JPanel {
 		setLayout(new BorderLayout());
 		table = new JTable(new MyTableModel());
 
-		add(BorderLayout.CENTER, table);
+		JScrollPane scrollPane = new JScrollPane(table);
+		scrollPane.setPreferredSize(new Dimension(200, 100));
+
+		// add(BorderLayout.CENTER, table);
+		add(BorderLayout.CENTER, scrollPane);
 
 		/*
-		JButton button = new JButton(new ExtratoFecharAction(this));
-		button.setToolTipText("Cancelar cadastro de ITEM");
-		button.setMnemonic(KeyEvent.VK_N);
-		add(BorderLayout.SOUTH, button);
-*/
+		 * JButton button = new JButton(new ExtratoFecharAction(this));
+		 * button.setToolTipText("Cancelar cadastro de ITEM");
+		 * button.setMnemonic(KeyEvent.VK_N); add(BorderLayout.SOUTH, button);
+		 */
 	}
 
 	/**

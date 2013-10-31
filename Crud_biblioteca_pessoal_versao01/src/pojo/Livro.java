@@ -5,11 +5,14 @@ public class Livro {
 	private int codlivro;
 	private String nome;
 	private int codescritor;
-	
-	public Livro(int codl, String name, int codautor) {
+	private String escritor;
+
+	public Livro(int codl, String name, int codautor, String escritor) {
 		this.codlivro = codl;
 		this.nome = name;
 		this.codescritor = codautor;
+		this.escritor = escritor;
+		
 	}
 	
 	public Livro() {
@@ -34,6 +37,10 @@ public class Livro {
 
 	public int getCodlivro() {
 		return codlivro;
+	}
+
+	public String getEscritor() {
+		return escritor;
 	}
 
 	@Override
